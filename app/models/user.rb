@@ -29,7 +29,7 @@ class User < ActiveModel
   end
 
   def upvote_share_weight(user)
-    user.upvoted_books.count != 0 ? upvote_share_count(user) / user.upvoted_books.count : 0
+    user.upvoted_books.count != 0 ? (upvote_share_count(user).to_f / user.upvoted_books.count).rationalize : 0
   end
 
   def recommended_books_from(user)
