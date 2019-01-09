@@ -7,11 +7,15 @@ Dir["./app/factories/*.rb"].each {|file| require file }
 Dir["./app/feed.rb"].each {|file| require file }
 
 
-BotFactory.create_list 10, :user
-BotFactory.create_list 10, :book
-BotFactory.create_list 20, :upvote
-BotFactory.create_list 20, :follow
+BotFactory.create_list 30, :user
+BotFactory.create_list 30, :book
+BotFactory.create_list 400, :upvote
+BotFactory.create_list 200, :follow
 
 ap Feed.new(User.first).retrieve
+
+10.times { |i| BookFactory.create(published_on: Time.now + i * 300) }
+
+ap Feed.new(User.first).refresh
 
 ap Feed.new(User.first).recommendation_list
