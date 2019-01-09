@@ -10,6 +10,14 @@ module Generators
       sort_feed(Book.all, @aggregated_books)
     end
 
+    # Bonus
+    def refresh
+      aggregate_books
+      new_books = Book.from_time(@user.last_active)
+      @user.last_active = Time.now
+      sort_feed(new_books, @aggregated_books)
+    end
+
     private
 
     def aggregate_books
