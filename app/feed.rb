@@ -21,7 +21,6 @@ class Feed
     @user.recommendation_list
   end
 
-
   private
 
   def aggregate_books
