@@ -2,7 +2,7 @@ class Author < ActiveModel
   attr_accessor :name
   ALL = []
 
-  def initialize(name)
+  def initialize(name: name)
     @name = name
     add
   end

@@ -1,5 +1,5 @@
 class AuthorFactory < BotFactory
-  def self.create(name = Faker::Book.author)
-    Author.new(name)
+  def self.create(name: name = Faker::Book.author)
+    Author.new(name: name)
   end
 end

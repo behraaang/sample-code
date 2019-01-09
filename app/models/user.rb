@@ -2,7 +2,7 @@ class User < ActiveModel
   attr_accessor :name, :last_active
   ALL = []
 
-  def initialize(name)
+  def initialize(name: name)
     @name = name
     @last_active = Time.now
     add
