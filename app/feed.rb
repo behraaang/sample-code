@@ -17,6 +17,11 @@ class Feed
     sort_feed(new_books, @aggregated_books)
   end
 
+  def recommendation_list
+    @user.recommendation_list
+  end
+
+
   private
 
   def aggregate_books
