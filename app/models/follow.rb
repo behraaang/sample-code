@@ -8,4 +8,11 @@ class Follow < ActiveModel
     @author = author
     add
   end
+
+  def to_hash
+    {
+        user: @user.to_hash,
+        author: @author.to_hash
+    }
+  end
 end

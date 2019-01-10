@@ -16,7 +16,7 @@ puts 'How many upvotes would you like there to be?'
 upvote_count = gets.chomp.to_i
 puts 'How many follows would you like there to be?'
 follow_count = gets.chomp.to_i
-puts 'How many follows would you like there to be before refresh?'
+puts 'How many books would you like there to be before refresh?'
 refresh_books_count = gets.chomp.to_i
 puts 'How many upvotes would you like there to be before refresh?'
 refresh_upvotes_count = gets.chomp.to_i
@@ -31,19 +31,22 @@ File.open('sample_result.txt', 'w') do |f|
 
   f.puts '*********************************'
   f.puts 'Here is the retrieved books for the first user'
-  f.puts Feed.new(User.first).retrieve.awesome_inspect
+  f.puts '*********************************'
+  f.puts Feed.new(User.first).retrieve.each_with_index.map { |b, i| {"#{i}": b.to_hash} }
   f.puts '*********************************'
 
   f.puts '*********************************'
   refresh_books_count.times { |i| BookFactory.create(published_on: Time.now + i * 100) }
   BotFactory.create_list refresh_upvotes_count, :upvote
   f.puts 'Here is the refreshed retrieved books for the first user'
-  f.puts Feed.new(User.first).refresh.awesome_inspect
+  f.puts '*********************************'
+  f.puts Feed.new(User.first).refresh.each_with_index.map { |b, i| {"#{i}": b.to_hash } }
   f.puts '*********************************'
 
   f.puts '*********************************'
   f.puts 'And here is the recommended list of books with'
   f.puts 'recommendation weights for the first user'
-  f.puts Feed.new(User.first).recommendation_list
+  f.puts '*********************************'
+  f.puts Feed.new(User.first).recommendation_list.each_with_index.map { |hash,i| {"#{i}": {book: hash[:book].first.to_hash, weight: hash[:weight] } } }
   f.puts '*********************************'
 end

@@ -13,4 +13,10 @@ class Author < ActiveModel
   def followers
     Follow.all.select { |f| f.author == self }.map(&:user)
   end
+
+  def to_hash
+    {
+        name: @name
+    }
+  end
 end

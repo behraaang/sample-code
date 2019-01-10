@@ -8,4 +8,11 @@ class Upvote < ActiveModel
     @book = book
     add
   end
+
+  def to_hash
+    {
+        user: @user.to_hash,
+        book: @book.to_hash
+    }
+  end
 end

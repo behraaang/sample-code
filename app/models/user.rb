@@ -41,4 +41,11 @@ class User < ActiveModel
     hashes_array  = grouped_array.map { |book, book_hashes| { book: book, weight: book_hashes.inject(0) {|sum, book_hash| sum + book_hash[:weight] } } }
     hashes_array.sort_by { |book_hash| -book_hash[:weight] }
   end
+
+  def to_hash
+    {
+        name: @name,
+        last_active: @last_active
+    }
+  end
 end

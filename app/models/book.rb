@@ -16,4 +16,12 @@ class Book < ActiveModel
   def self.from_time(time)
     Book.all.select { |b| b.published_on >= time}
   end
+
+  def to_hash
+    {
+        author: @author.to_hash,
+        title: @title,
+        published_on: @published_on
+    }
+  end
 end

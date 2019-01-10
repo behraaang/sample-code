@@ -3,5 +3,6 @@ class FollowFactory < BotFactory
     user = options[:user] || User.all.sample
     author = options[:author] || Author.all.sample
 
-    Follow.new(user, author)  end
+    Follow.new(user, author)
+  end
 end
