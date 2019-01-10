@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Feed
   def initialize(user)
     @user = user
@@ -28,6 +30,6 @@ class Feed
   end
 
   def sort_feed(books, aggregated_books)
-    books.sort { |b| -(aggregated_books.count(b)) }
+    books.sort { |b| -aggregated_books.count(b) }
   end
 end

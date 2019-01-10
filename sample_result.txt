@@ -1,52 +1,49 @@
-Hello
-*********************************
-Here is the retrieved books for the first user
-*********************************
-{:"0"=>{:author=>{:name=>"Demarcus Bartell"}, :title=>"A Summer Bird-Cage", :published_on=>2015-11-27 19:04:54 +0330}}
-{:"1"=>{:author=>{:name=>"Melania Abernathy"}, :title=>"Tiger! Tiger!", :published_on=>2017-01-09 19:44:45 +0330}}
-{:"2"=>{:author=>{:name=>"Giovanni Williamson"}, :title=>"Tender Is the Night", :published_on=>2016-09-17 18:14:22 +0430}}
-{:"3"=>{:author=>{:name=>"Hyman Howe Jr."}, :title=>"Carrion Comfort", :published_on=>2016-07-06 20:45:24 +0430}}
-{:"4"=>{:author=>{:name=>"Monty Hettinger"}, :title=>"The Monkey's Raincoat", :published_on=>2012-08-07 21:56:41 +0430}}
-{:"5"=>{:author=>{:name=>"Emanuel Wyman"}, :title=>"Mother Night", :published_on=>2016-03-14 17:07:47 +0330}}
-{:"6"=>{:author=>{:name=>"Francina Hilll Sr."}, :title=>"A Handful of Dust", :published_on=>2017-08-21 21:22:47 +0430}}
-{:"7"=>{:author=>{:name=>"Ernesto Fahey"}, :title=>"Far From the Madding Crowd", :published_on=>2012-06-24 17:55:52 +0430}}
-{:"8"=>{:author=>{:name=>"Michal Grimes"}, :title=>"It's a Battlefield", :published_on=>2013-09-11 19:28:45 +0430}}
-{:"9"=>{:author=>{:name=>"Miss Lilly Konopelski"}, :title=>"Rosemary Sutcliff", :published_on=>2016-10-18 19:57:08 +0330}}
-*********************************
-*********************************
-Here is the refreshed retrieved books for the first user
-*********************************
-{:"0"=>{:author=>{:name=>"Donella Conn"}, :title=>"Waiting for the Barbarians", :published_on=>2019-01-11 00:22:48 +0330}}
-{:"1"=>{:author=>{:name=>"Dr. Thad Thompson"}, :title=>"A Catskill Eagle", :published_on=>2019-01-11 00:21:08 +0330}}
-{:"2"=>{:author=>{:name=>"Harry Ondricka"}, :title=>"An Evil Cradling", :published_on=>2019-01-11 00:26:08 +0330}}
-{:"3"=>{:author=>{:name=>"Sheri Windler"}, :title=>"Brandy of the Damned", :published_on=>2019-01-11 00:27:48 +0330}}
-{:"4"=>{:author=>{:name=>"Loralee Bauch"}, :title=>"The Heart Is Deceitful Above All Things", :published_on=>2019-01-11 00:29:28 +0330}}
-{:"5"=>{:author=>{:name=>"Leon Gottlieb II"}, :title=>"For a Breath I Tarry", :published_on=>2019-01-11 00:31:08 +0330}}
-{:"6"=>{:author=>{:name=>"Millie Boyer"}, :title=>"Eyeless in Gaza", :published_on=>2019-01-11 00:32:48 +0330}}
-{:"7"=>{:author=>{:name=>"Coy McDermott"}, :title=>"Frequent Hearses", :published_on=>2019-01-11 00:19:28 +0330}}
-{:"8"=>{:author=>{:name=>"Krista Barrows"}, :title=>"By Grand Central Station I Sat Down and Wept", :published_on=>2019-01-11 00:34:28 +0330}}
-{:"9"=>{:author=>{:name=>"Ali Cruickshank"}, :title=>"The Golden Apples of the Sun", :published_on=>2019-01-11 00:24:28 +0330}}
-*********************************
-*********************************
-And here is the recommended list of books with
-recommendation weights for the first user
-*********************************
-{:"0"=>{:book=>{:author=>{:name=>"Melania Abernathy"}, :title=>"Tiger! Tiger!", :published_on=>2017-01-09 19:44:45 +0330}, :weight=>(44/15)}}
-{:"1"=>{:book=>{:author=>{:name=>"Francina Hilll Sr."}, :title=>"A Handful of Dust", :published_on=>2017-08-21 21:22:47 +0430}, :weight=>(53/20)}}
-{:"2"=>{:book=>{:author=>{:name=>"Ernesto Fahey"}, :title=>"Far From the Madding Crowd", :published_on=>2012-06-24 17:55:52 +0430}, :weight=>(67/30)}}
-{:"3"=>{:book=>{:author=>{:name=>"Hyman Howe Jr."}, :title=>"Carrion Comfort", :published_on=>2016-07-06 20:45:24 +0430}, :weight=>(131/60)}}
-{:"4"=>{:book=>{:author=>{:name=>"Monty Hettinger"}, :title=>"The Monkey's Raincoat", :published_on=>2012-08-07 21:56:41 +0430}, :weight=>(41/20)}}
-{:"5"=>{:book=>{:author=>{:name=>"Donella Conn"}, :title=>"Waiting for the Barbarians", :published_on=>2019-01-11 00:22:48 +0330}, :weight=>(9/5)}}
-{:"6"=>{:book=>{:author=>{:name=>"Dr. Thad Thompson"}, :title=>"A Catskill Eagle", :published_on=>2019-01-11 00:21:08 +0330}, :weight=>(4/3)}}
-{:"7"=>{:book=>{:author=>{:name=>"Demarcus Bartell"}, :title=>"A Summer Bird-Cage", :published_on=>2015-11-27 19:04:54 +0330}, :weight=>(11/10)}}
-{:"8"=>{:book=>{:author=>{:name=>"Ali Cruickshank"}, :title=>"The Golden Apples of the Sun", :published_on=>2019-01-11 00:24:28 +0330}, :weight=>(2/3)}}
-{:"9"=>{:book=>{:author=>{:name=>"Michal Grimes"}, :title=>"It's a Battlefield", :published_on=>2013-09-11 19:28:45 +0430}, :weight=>(7/12)}}
-{:"10"=>{:book=>{:author=>{:name=>"Krista Barrows"}, :title=>"By Grand Central Station I Sat Down and Wept", :published_on=>2019-01-11 00:34:28 +0330}, :weight=>(8/15)}}
-{:"11"=>{:book=>{:author=>{:name=>"Emanuel Wyman"}, :title=>"Mother Night", :published_on=>2016-03-14 17:07:47 +0330}, :weight=>(9/20)}}
-{:"12"=>{:book=>{:author=>{:name=>"Leon Gottlieb II"}, :title=>"For a Breath I Tarry", :published_on=>2019-01-11 00:31:08 +0330}, :weight=>(1/3)}}
-{:"13"=>{:book=>{:author=>{:name=>"Millie Boyer"}, :title=>"Eyeless in Gaza", :published_on=>2019-01-11 00:32:48 +0330}, :weight=>(1/4)}}
-{:"14"=>{:book=>{:author=>{:name=>"Giovanni Williamson"}, :title=>"Tender Is the Night", :published_on=>2016-09-17 18:14:22 +0430}, :weight=>(1/4)}}
-{:"15"=>{:book=>{:author=>{:name=>"Miss Lilly Konopelski"}, :title=>"Rosemary Sutcliff", :published_on=>2016-10-18 19:57:08 +0330}, :weight=>(1/4)}}
-{:"16"=>{:book=>{:author=>{:name=>"Sheri Windler"}, :title=>"Brandy of the Damned", :published_on=>2019-01-11 00:27:48 +0330}, :weight=>(1/5)}}
-{:"17"=>{:book=>{:author=>{:name=>"Harry Ondricka"}, :title=>"An Evil Cradling", :published_on=>2019-01-11 00:26:08 +0330}, :weight=>(1/5)}}
-*********************************
+  In this sample there were 10 users, 10 books, 30 upvotes
+  and 30 follows have been made. The client calls
+  the retrieve method for getting a sorted list of books based
+  on his/hers follows and upvotes, Here are the retrieved books
+  for the First user;
+  *********************************
+1: {:author=>{:name=>"Ms. Edgardo Gleichner"}, :title=>"For a Breath I Tarry", :published_on=>2017-12-10 18:31:15 +0330}
+2: {:author=>{:name=>"Joycelyn Jenkins Jr."}, :title=>"The Moon by Night", :published_on=>2010-05-02 19:55:56 +0430}
+3: {:author=>{:name=>"Maranda Sporer"}, :title=>"Dying of the Light", :published_on=>2017-11-28 20:20:41 +0330}
+4: {:author=>{:name=>"Maurice Effertz"}, :title=>"From Here to Eternity", :published_on=>2014-11-18 20:55:36 +0330}
+5: {:author=>{:name=>"Rubie Moore"}, :title=>"The Heart Is Deceitful Above All Things", :published_on=>2016-11-28 20:46:13 +0330}
+6: {:author=>{:name=>"Loria Wuckert"}, :title=>"Those Barren Leaves, Thrones, Dominations", :published_on=>2016-06-04 20:37:35 +0430}
+7: {:author=>{:name=>"Deneen Satterfield DDS"}, :title=>"Mother Night", :published_on=>2010-10-07 18:09:55 +0330}
+8: {:author=>{:name=>"Helen Goldner"}, :title=>"Dulce et Decorum Est", :published_on=>2015-11-22 19:07:01 +0330}
+9: {:author=>{:name=>"Miss Heath Fadel"}, :title=>"The Proper Study", :published_on=>2009-08-23 21:56:43 +0430}
+10: {:author=>{:name=>"Sang Kshlerin"}, :title=>"Nectar in a Sieve", :published_on=>2015-06-26 18:59:41 +0430}
+  *********************************
+  After that 10 new books and 20 new upvotes
+  were added and the same client will make a request to refresh
+  their retrieved sorted list of books, Here is the refreshed
+  retrieved books;
+  *********************************
+1: {:author=>{:name=>"Leda Lebsack"}, :title=>"Fame Is the Spur", :published_on=>2019-01-11 02:46:02 +0330}
+2: {:author=>{:name=>"Salvador Gaylord DDS"}, :title=>"Everything is Illuminated", :published_on=>2019-01-11 02:44:22 +0330}
+3: {:author=>{:name=>"Elmo Weissnat"}, :title=>"Gone with the Wind", :published_on=>2019-01-11 02:49:22 +0330}
+4: {:author=>{:name=>"Mrs. Earnest Frami"}, :title=>"Jesting Pilate", :published_on=>2019-01-11 02:51:02 +0330}
+5: {:author=>{:name=>"Laci Kuhic MD"}, :title=>"The Waste Land", :published_on=>2019-01-11 02:52:42 +0330}
+6: {:author=>{:name=>"Rebekah Hilpert"}, :title=>"All the King's Men", :published_on=>2019-01-11 02:54:22 +0330}
+7: {:author=>{:name=>"Beata Senger"}, :title=>"The Far-Distant Oxus", :published_on=>2019-01-11 02:56:02 +0330}
+8: {:author=>{:name=>"Steven MacGyver"}, :title=>"Now Sleeps the Crimson Petal", :published_on=>2019-01-11 02:42:42 +0330}
+9: {:author=>{:name=>"Antonio Schinner"}, :title=>"Quo Vadis", :published_on=>2019-01-11 02:57:42 +0330}
+10: {:author=>{:name=>"Joye Brakus"}, :title=>"The Line of Beauty", :published_on=>2019-01-11 02:47:42 +0330}
+  *********************************
+  Based on his/her upvotes we could generate a recommended list of
+  books and the weights of the recommendation for each one, here
+  are the books that have been recommended to the same user;
+  *********************************
+-: weight: book
+1:    5/4: {:author=>{:name=>"Joycelyn Jenkins Jr."}, :title=>"The Moon by Night", :published_on=>2010-05-02 19:55:56 +0430}
+2:    5/4: {:author=>{:name=>"Ms. Edgardo Gleichner"}, :title=>"For a Breath I Tarry", :published_on=>2017-12-10 18:31:15 +0330}
+3:    1/2: {:author=>{:name=>"Deneen Satterfield DDS"}, :title=>"Mother Night", :published_on=>2010-10-07 18:09:55 +0330}
+4:    1/2: {:author=>{:name=>"Sang Kshlerin"}, :title=>"Nectar in a Sieve", :published_on=>2015-06-26 18:59:41 +0430}
+5:    1/4: {:author=>{:name=>"Miss Heath Fadel"}, :title=>"The Proper Study", :published_on=>2009-08-23 21:56:43 +0430}
+6:    1/4: {:author=>{:name=>"Maurice Effertz"}, :title=>"From Here to Eternity", :published_on=>2014-11-18 20:55:36 +0330}
+7:    0/1: {:author=>{:name=>"Helen Goldner"}, :title=>"Dulce et Decorum Est", :published_on=>2015-11-22 19:07:01 +0330}
+8:    0/1: {:author=>{:name=>"Rubie Moore"}, :title=>"The Heart Is Deceitful Above All Things", :published_on=>2016-11-28 20:46:13 +0330}
+9:    0/1: {:author=>{:name=>"Maranda Sporer"}, :title=>"Dying of the Light", :published_on=>2017-11-28 20:20:41 +0330}
+  *********************************
+  Have a nice day ;)

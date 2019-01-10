@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class FollowFactory < BotFactory
   def self.create(options = {})
     user = options[:user] || User.all.sample

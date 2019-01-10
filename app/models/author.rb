@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Author < ActiveModel
   attr_accessor :name
 
@@ -7,7 +9,7 @@ class Author < ActiveModel
   end
 
   def books
-    Book.all.select {|b| b.author == self }
+    Book.all.select { |b| b.author == self }
   end
 
   def followers
@@ -16,7 +18,7 @@ class Author < ActiveModel
 
   def to_hash
     {
-        name: @name
+      name: @name
     }
   end
 end

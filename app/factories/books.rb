@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class BookFactory < BotFactory
   def self.create(options = {})
     author = options[:author] || AuthorFactory.create

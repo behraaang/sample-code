@@ -1,0 +1,15 @@
+AllCops:
+  TargetRubyVersion: 2.4.1
+  # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
+  # to ignore them, so only the ones explicitly set in this file are enabled.
+  Exclude:
+    - '**/templates/**/*'
+    - '**/vendor/**/*'
+    - 'db/schema.rb'
+    - 'bin/**/*'
+Style/Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
