@@ -1,7 +1,7 @@
 class User < ActiveModel
   attr_accessor :name, :last_active
 
-  def initialize(name: name)
+  def initialize(name)
     @name = name
     @last_active = Time.now
     add
