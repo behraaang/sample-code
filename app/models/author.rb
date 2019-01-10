@@ -1,6 +1,5 @@
 class Author < ActiveModel
   attr_accessor :name
-  ALL = []
 
   def initialize(name: name)
     @name = name

@@ -1,6 +1,6 @@
 class Book < ActiveModel
   attr_accessor :author, :title, :published_on
-  ALL = []
+
   def initialize(author: author, title: title, published_on: published_on)
     @author = author
     @title = title

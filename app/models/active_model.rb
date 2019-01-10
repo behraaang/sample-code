@@ -1,17 +1,27 @@
 class ActiveModel
-  def self.all
-    self::ALL
+  class << self
+    def all
+      @all ||= []
+    end
+
+    def first
+      all.first
+    end
+
+    def count
+      all.count
+    end
   end
 
-  def self.first
-    all.first
-  end
-
-  def self.count
-    all.count
-  end
+  protected
 
   def add
-    self.class::ALL << self
+    all << self
+  end
+
+  private
+
+  def all
+    self.class.all
   end
 end
