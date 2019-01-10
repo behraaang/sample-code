@@ -1,6 +1,8 @@
 require 'faker'
 require 'byebug'
 require 'ap'
+
+require './app/models/active_model'
 Dir["./app/models/*.rb"].each {|file| require file }
 Dir["./app/factories/bot_factory.rb"].each {|file| require file }
 Dir["./app/factories/*.rb"].each {|file| require file }
